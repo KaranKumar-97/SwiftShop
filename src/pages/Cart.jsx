@@ -13,7 +13,7 @@ const Cart = () => {
   },[cart])
 
   return (
-  <div className="flex justify-center overflow-x-hidden">
+  <div className={"flex justify-center mb-8 "+ (cart.length >2 ? ("") : ("lg:h-screen") )}>
     <div className="flex justify-around w-11/12 mb-12">
     { 
       cart.length > 0 ? 
